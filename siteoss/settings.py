@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['dokeross.pythonanywhere.com']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
