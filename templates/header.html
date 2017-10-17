@@ -1,0 +1,60 @@
+{% load static %}
+<header>
+    <div class="container">
+        <div class="navigation">
+            <div class="row"> 
+                <div class="col-sm-9 ">
+                    <ul class="hidden-xs service">
+                        <li><a href="/">ГЛАВНАЯ</a></li>
+                            <li class="service_main">
+                                <a href="#">УСЛУГИ</a>
+                                <ul class="hidden_service text-center">
+                                    <li><a href="{% url 'doker_page' %}">Аренда торговых помещений</a></li>
+                                    <li><a href="{% url 'warehouse_page' %}">Аренда складских площадей</a></li>
+                                    <li><a href="{% url 'office_page' %}">Аренда офисов</a></li>
+                                </ul>
+                            </li>
+                        <li><a href="{% url 'about_page' %}">О НАС</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+            <nav class="navbar navbar-default hidden-md hidden-lg hidden-sm">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="phone">+7 (343) 323-23-23</span>
+                    <button class="header_button" data-toggle="modal" data-target="#modal-3">заказать звонок</button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">ГЛАВНАЯ</a></li>
+                        <li><a href="#">УСЛУГИ</a></li>
+                        <li><a href="#">О НАС</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-sm-3 text-right hidden-xs">
+                <span class="phone">+7 (343) 323-23-23</span>
+                <button class="hidden-sm callback_button" data-toggle="modal" data-target="#modal-3">
+                    <i class="fa fa-phone" aria-hidden="true"></i>заказать <b>звонок</b>
+                </button>
+                <!-- <button class="header_button hidden-sm">заказать звонок</button> -->
+            </div>
+            </div>
+        </div>
+    </div>    
+</header>
+<div class="callback text-center">
+    
+</div>
+
+{% include 'callback.html' %}
+
+

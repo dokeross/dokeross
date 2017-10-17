@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="image_main">
+  <div class="container">
+    <div class="row main_padding">
+      <div class="col-sm-9">
+          <h1 class="h1_main">КОММЕРЧЕСКАЯ НЕДВИЖИМОСТЬ</h1>
+          <p class="p_main">Наша группа компаний - один из ведущих игроков на рынке девелопмента в Уральском регионе.
+            В сферу управления входят: складской комплекс, торговый комплекс "ДОКЕР",
+            Контейнерный терминал "C.I.T." и Екатеринбургский таможенный терминал.</p>
+      </div>
+      
+      <!-- <div class="col-sm-6 col-sm-offset-1 main_form hidden-xs">
+          <form role="form">
+              <h2>Мы с радостью ответим на ваши вопросы</h2>
+              <input type="text" placeholder="ВАШЕ ИМЯ" class="col-md-4 col-sm-10">
+              <input type="text" placeholder="ВАШЕ ОТЧЕСТВО" class="col-md-5 col-sm-10">
+              <input type="text" placeholder="ВАШЕ СООБЩЕНИЕ" class="col-md-8 col-sm-10">
+              <button class="col-md-11 col-sm-10">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+          </form> 
+      </div> -->
+    </div>
+  </div>  
+</main>
+<section class="section1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-4 padding_right_zero">
+        <div class="warehouse">
+          <div class="warehouse__img">
+            <img src="{% static 'img/sklad_img.jpg' %}" alt="">
+          </div>
+          <div class="warehouse__h3"><b>СКЛАДЫ</b></div>
+          <div class="warehouse__p">Складской комплекс,
+            общей площадью территории 50 000 кв. м и площадью складов –
+            25 000 кв. м, насчитывает около 50 складских объектов.
+            Склады различаются по своим характеристикам и предназначению.</div>
+          <a href="{% url 'warehouse_page' %}"><button class="warehouse__button text-center">ПОДРОБНЕЕ</button></a>
+        </div>
+      </div>
+    
+      <div class="col-sm-4 padding_zero">
+        <div class="doker">
+          <div class="doker__img">
+            <img src="{% static 'img/torg_ploshadi.jpg' %}" alt="">
+          </div>
+          <div class="doker__h3"><b>ТОРГОВЫЕ ПЛОЩАДИ</b></div>
+          <div class="doker__p">«ДОКЕР» – это крупнейший на Урале торговый комплекс,
+            объединяющий 300 магазинов, специализирующихся на всем спектре товаров
+            для ремонта, строительства и обустройства дома.<br><br></div>
+              <a href="{% url 'doker_page' %}"><button class="doker__button text-center">ПОДРОБНЕЕ</button></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-4 padding_left_zero">
+        <div class="offices">
+          <div class="offices__img">
+            <img src="{% static '/img/office.jpg' %}" alt="">
+          </div>
+          <div class="offices__h3"><b>ОФИСЫ</b></div>
+          <div class="offices__p">Наша компания предлагает в аренду офисные  площади
+            в современном административном здании по адресу г.
+            Екатеринбург, район аэропорта Кольцово ул. Бахчиванджи 2. Имеются офисы различной площади.</div>
+            <a href="{% url 'office_page' %}"><button class="offices__button text-center">ПОДРОБНЕЕ</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-1 center-xs-sm">
+        <h2 class="section2__h2">ИНФРАСТРУКТУРА</h2>
+        <p class="section2__p col-lg-9">If JavaScript is disabled and the viewport
+            is narrow enough that the navbar collapses, it will be
+            impossible to expand the navbar and view navbar collapses, it will be
+            impossible to expand the navbar and view</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="backg_min_one hidden-xs hidden-sm hidden-md"></div>
+        <div class="backg_min_two">
+          <div class="inline m_right">
+            <img src="{% static 'img/internet_ico.png' %}" class="img_infrastructure">
+            <p class="p_infrastructure">Телефония и интернет</p>
+          </div>
+          <div class="inline">
+            <img src="{% static 'img/ohrana_icon.png' %}" class="img_infrastructure">
+            <p class="p_infrastructure">Круглосуточная <br /> охрана территории</p>
+          </div>
+          <div class="inline m_right">
+              <img src="{% static 'img/pogruzka_icon.png' %}" class="img_infrastructure">
+              <p class="p_infrastructure">Погрузо-разгрузочные<br />работы</p>
+            </div>
+            <div class="inline">
+              <img src="{% static 'img/perevozka_icon.png' %}" class="img_infrastructure">
+              <p class="p_infrastructure">Подъездные авто<br />и ж/д пути</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section3">
+  <div class="container">
+    <h2 class="section3__h2 text-center">МЫ-ВАШ КОМПЕТЕНТНЫЙ ПАРТНЕР</h2>
+    <p class="section3__p text-center">группа компаний "ОБОРОНСНАБСБЫТ" - один из ведущих игроков на<br /> рынке девелопмента в Уральском регионе</p>
+    <div class="center">
+      <div class="advantages">
+        <img src="{% static 'img/50let_icon.png' %}" alt="" class="advantages__img">
+        <span class="advantages__span">50 лет на рынке</span>
+      </div>
+      <div class="advantages owner_border">
+        <img src="{% static 'img/owner_icon.png' %}" alt="" class="advantages__img">
+        <span class="advantages__span">Собственник</span>
+      </div>
+      <div class="advantages">
+        <img src="{% static 'img/hands_icon.png' %}" alt="" class="advantages__img">
+        <span class="advantages__span">Строгое выполнение своих обязательств</span>
+      </div>
+      <div class="advantages shield_border">
+        <img src="{% static 'img/shield_icon.png' %}" alt="" class="advantages__img">
+        <span class="advantages__span">100% гарантия<br /> сохранности имущества</span>
+      </div>
+      <div class="advantages advantages_compound">
+        <img src="{% static 'img/mozaik_icon.png' %}" alt="" class="advantages__img">
+        <span class="advantages__span">Комплексное<br /> предоставление услуг</span>
+      </div>
+      <div class="advantages recommendation_border">
+        <img src="{% static 'img/22_icon.png' %}" alt="" class="advantages__img">
+        <span class="advantages__span">22% обращаются<br /> по рекомендации</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section4"></section>
+<section class="section5 hidden-xs">
+  <p class="section5__border"></p>
+  <h2 class="sectin5__h2 text-center clearfix">нам доверяют</h2>
+  <!-- <h2 class="section5__h2 text-center">Нам доверяют</h2> -->
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <div class="single-item" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'>
+            <div><img src="{% static 'img/askona.png' %}" alt="" class="advantages__img"></div>
+            <div><img src="{% static 'img/avega.png' %}" alt="" class="advantages__img"></div>
+            <div><img src="{% static 'img/leo.png' %}" alt="" class="advantages__img"></div>
+            <div><img src="{% static 'img/piastrella.png' %}" alt="" class="advantages__img"></div>
+            <div><img src="{% static 'img/tikkurila.jpg' %}" alt="" class="advantages__img"></div>
+            <div><img src="{% static 'img/askona.png' %}" alt="" class="advantages__img"></div>
+            <div><img src="{% static 'img/avega.png' %}" alt="" class="advantages__img"></div>
+            <div><img src="{% static 'img/leo.png' %}" alt="" class="advantages__img"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

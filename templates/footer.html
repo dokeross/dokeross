@@ -1,0 +1,28 @@
+{% load static %}
+<footer class="footer">
+    <div class="text-center">
+        <img src="{% static 'img/logo.png' %}" alt="" class="logo">
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-3 pull-left text-left phone_float">
+        <p class="footer__p">
+            ГК Оборонснабсбыт г.Екатеринбург ул. Бахчиванджи, 2
+            ИНН 667545564 КПП 4554556544 ОГРН 4354354435345435435
+            Тел. +7(343) 343-44-44<br />
+            Email: oboronka@mail.com
+        </p>
+        <button class="footer_button">посмотреть на карте</button>
+        </div>
+        <div class="col-sm-2 pull-right text-right contact phone_float">
+            <p class="contact__p"><b>+7(343) 343-33-33</b></p>
+            <span class="footer__span hidden-xs">многоканальный телефон</span>
+            <button class="footer_button" data-toggle="modal" data-target="#modal-4">написать нам</button>
+            <button class="footer_button" data-toggle="modal" data-target="#modal-3">заказать звонок</button>
+        </div>
+    </div>
+    </div>
+</footer>
+
+{% include 'callback.html' %}
+{% include 'form_footer.html' %}

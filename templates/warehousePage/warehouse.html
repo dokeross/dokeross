@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="background__warehous">
+    <div class="container">
+      <div class="content_warehouse">
+        <h1 class="h1__warehouse">Складские и производственные <br />площади в аренду</h1>
+        <p class="p__warehouse">чистая аренда от собственника, без посредника</p>
+        <p class="description_warehouses">Площадь от 14м2 до 2000 м2
+            Возможна аренда необходимого количества метров
+            Погрузо-разгрузочные услуги
+            Возможность снять офис
+            Склады имеют все необходимое оборудование, в том числе пандусы
+            Вывоз мусора, снега , утилизация твердых бытовых отходов
+            Возможна доставка товаров до склада по ж/д ветке Площадь от 14м2 до 2000 м2
+            Возможна аренда необходимого количества метров
+            Погрузо-разгрузочные услуги
+            Возможность снять офис
+        </p>
+      </div>  
+      <div class="types text-center clearfix">
+            <div class="col-sm-6 type">
+                <img src="{% static 'img/warm_warehouse.jpg' %}" class="type__img" alt="">
+                <span>Отапливаемые склады</span>
+                <a href="{% url 'warehouse_warm' %}">
+                    <div class="more">узнать больше</div>
+                </a> 
+          </div>
+          <div class="col-sm-6 type">
+            <img src="{% static 'img/cold_warehouse.jpg' %}" class="type__img" alt="">
+            <span>Холодные склады</span>
+            <a href="{% url 'warehouse_cold' %}">
+                <div class="more">узнать больше</div>
+            </a> 
+          </div>
+          <div class="col-sm-6 type">
+            <img src="{% static 'img/production_area.jpg' %}" class="type__img" alt="">
+            <span>Производственные площади</span>
+            <a href="{% url 'warehouse_manufacture' %}">
+                <div class="more">узнать больше</div>
+            </a> 
+          </div>
+          <div class="col-sm-6 type">
+            <img src="{% static 'img/outdoor_area.jpg' %}" class="type__img" alt="">
+            <span>Открытые площадки хранения</span>
+            <a href="{% url 'warehouse_open' %}">
+                <div class="more">узнать больше</div>
+            </a> 
+          </div>
+      </div>
+    </div>
+</div>  
+
+{% endblock %} 
