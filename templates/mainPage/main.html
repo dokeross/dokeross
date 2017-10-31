@@ -11,6 +11,9 @@
             В сферу управления входят: складской комплекс, торговый комплекс "ДОКЕР",
             Контейнерный терминал "C.I.T." и Екатеринбургский таможенный терминал.</p>
       </div>
+      <div class="scroll_button">
+        <span class="border_scroll"></span>
+      </div>
       
       <!-- <div class="col-sm-6 col-sm-offset-1 main_form hidden-xs">
           <form role="form">
@@ -72,14 +75,41 @@
 <section class="section2">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-lg-offset-1 center-xs-sm">
-        <h2 class="section2__h2">ИНФРАСТРУКТУРА</h2>
-        <p class="section2__p col-lg-9">If JavaScript is disabled and the viewport
-            is narrow enough that the navbar collapses, it will be
-            impossible to expand the navbar and view navbar collapses, it will be
-            impossible to expand the navbar and view</p>
+      <h2 class="section2__h2 text-center">Инфраструктура</h2>
+      <div class="infrastructure">
+        <img src="{% static '/img/internet.png' %}" alt="" class="img_infrastructure">
+        <p>Телефония и интернет</p>
       </div>
-      <div class="col-lg-6">
+      <div class="infrastructure">
+        <img src="{% static '/img/ohrana.png' %}" alt="" class="img_infrastructure">
+        <p>Охрана территории</p>
+      </div>
+      <div class="infrastructure">
+        <img src="{% static '/img/pogruzka.png' %}" alt="" class="img_infrastructure">
+        <p>Подъездные </br>авто и ж/д </br>пути</p>
+      </div>
+      <div class="infrastructure">
+        <img src="{% static '/img/transport.png' %}" alt="" class="img_infrastructure">
+        <p>Погрузо-разгрузочные работы</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <section class="section2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 center-xs-sm">
+        <h2 class="section2__h2">ИНФРАСТРУКТУРА</h2>
+        <p class="section2__p">Компания стремится обеспечить
+          комплексный подход к организации бизнеса и предлагает
+          своим клиентам комплекс сопутствующих услуг, позволяя оптимизировать ресурсы бизнеса арендаторов.
+          
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-offset-2">
         <div class="backg_min_one hidden-xs hidden-sm hidden-md"></div>
         <div class="backg_min_two">
           <div class="inline m_right">
@@ -102,7 +132,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <section class="section3">
   <div class="container">
     <h2 class="section3__h2 text-center">МЫ-ВАШ КОМПЕТЕНТНЫЙ ПАРТНЕР</h2>
@@ -136,25 +166,5 @@
   </div>
 </section>
 <section class="section4"></section>
-<section class="section5 hidden-xs">
-  <p class="section5__border"></p>
-  <h2 class="sectin5__h2 text-center clearfix">нам доверяют</h2>
-  <!-- <h2 class="section5__h2 text-center">Нам доверяют</h2> -->
-  <div class="container">
-    <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
-          <div class="single-item" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'>
-            <div><img src="{% static 'img/askona.png' %}" alt="" class="advantages__img"></div>
-            <div><img src="{% static 'img/avega.png' %}" alt="" class="advantages__img"></div>
-            <div><img src="{% static 'img/leo.png' %}" alt="" class="advantages__img"></div>
-            <div><img src="{% static 'img/piastrella.png' %}" alt="" class="advantages__img"></div>
-            <div><img src="{% static 'img/tikkurila.jpg' %}" alt="" class="advantages__img"></div>
-            <div><img src="{% static 'img/askona.png' %}" alt="" class="advantages__img"></div>
-            <div><img src="{% static 'img/avega.png' %}" alt="" class="advantages__img"></div>
-            <div><img src="{% static 'img/leo.png' %}" alt="" class="advantages__img"></div>
-          </div>
-        </div>
-    </div>
-  </div>
-</section>
+{% include 'trust_us.html' %}
 {% endblock %}

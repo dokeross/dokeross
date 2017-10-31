@@ -3,149 +3,91 @@
 
 {% block content %}
     
-    <div class="bg_section">
-        <section class="office_head text-center">
-            <h1 class="office__h1">Аренда офисных помещений<br /> в Екатеринбурге от собственника</h1>
-            <p class="office__p">свободные офисы от 20кв/м на ваш выбор</p>
-            <button>подобрать офис</button>
-        </section>
-        </div>
-    <section class="office_content">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <p class="p__office_content text-left">«ДОКЕР» – крупнейший на Урале торговый комплекс,
-                        специализирующийся на всем спектре товаров для ремонта, строительства и интерьера. Подробнее >>
-                        Торговый комплекс «ДОКЕР» – это 300 магазинов, в которых вы найдете самые разнообразные стройматериалы,
-                        все необходимое для отделки, сантехнику, мебель и многое другое, что сделает ваш дом красивым и уютным.
-                    </p>
-                    <div class="office_items clearfix">
-                        <div class="office_item">
-                            <img src="{% static 'img/office1.jpeg' %}" alt="" class="item_img">
-                            <div class="office_description">
-                                <span class="item_span">м2 -35</span>
-                                <span class="item_span">этаж -3</span>
-                                <span class="item_span">класс -А</span>
-                            </div>
-                            <button class="item_button" data-toggle="modal" data-target="#modal-1">подробнее</button>
-                        </div>
-                        <div class="office_item">
-                            <img src="{% static 'img/office1.jpeg' %}" alt="" class="item_img">
-                            <div class="office_description">
-                                <span class="item_span">м2 -35</span>
-                                <span class="item_span">этаж -3</span>
-                                <span class="item_span">класс -А</span>
-                            </div>
-                            <button class="item_button" data-toggle="modal" data-target="#modal-1">подробнее</button>
-                        </div>
-                        <div class="office_item">
-                            <img src="{% static 'img/office1.jpeg' %}" alt="" class="item_img">
-                            <div class="office_description">
-                                <span class="item_span">м2 -35</span>
-                                <span class="item_span">этаж -3</span>
-                                <span class="item_span">класс -А</span>
-                            </div>
-                            <button class="item_button" data-toggle="modal" data-target="#modal-1">подробнее</button>
-                        </div>
-                        <div class="office_item">
-                            <img src="{% static 'img/office1.jpeg' %}" alt="" class="item_img">
-                            <div class="office_description">
-                                <span class="item_span">м2 -35</span>
-                                <span class="item_span">этаж -3</span>
-                                <span class="item_span">класс -А</span>
-                            </div>
-                            <button class="item_button" data-toggle="modal" data-target="#modal-1">подробнее</button>
-                        </div>
-                        <div class="office_item">
-                            <img src="{% static 'img/office1.jpeg' %}" alt="" class="item_img">
-                            <div class="office_description">
-                                <span class="item_span">м2 -35</span>
-                                <span class="item_span">этаж -3</span>
-                                <span class="item_span">класс -А</span>
-                            </div>
-                            <button class="item_button" data-toggle="modal" data-target="#modal-1">подробнее</button>
-                        </div>
-                        <div class="office_item">
-                            <img src="{% static 'img/office1.jpeg' %}" alt="" class="item_img">
-                            <div class="office_description">
-                                <span class="item_span">м2 -35</span>
-                                <span class="item_span">этаж -3</span>
-                                <span class="item_span">класс -А</span>
-                            </div>
-                            <button class="item_button" data-toggle="modal" data-target="#modal-1">подробнее</button>
-                        </div>
-                        <div class="office_item">
-                            <img src="{% static 'img/office1.jpeg' %}" alt="" class="item_img">
-                            <div class="office_description">
-                                <span class="item_span">м2 -35</span>
-                                <span class="item_span">этаж -3</span>
-                                <span class="item_span" data-toggle="modal" data-target="#modal-1">класс -А</span>
-                            </div>
-                            <button class="item_button">подробнее</button>
-                        </div>
-                        <div class="office_item">
-                            <img src="{% static 'img/office1.jpeg' %}" alt="" class="item_img">
-                            <div class="office_description">
-                                <span class="item_span">м2 -35</span>
-                                <span class="item_span">этаж -3</span>
-                                <span class="item_span">класс -А</span>
-                            </div>
-                            <button class="item_button" data-toggle="modal" data-target="#modal-1">подробнее</button>
-                        </div>
-                    </div>
-                    <button class="button_items">показать еще</button>
-                </div>   
-                            
-            </div>
+<div class="bg_section">
+    <section class="office_head text-center">
+        <h1 class="office__h1">Аренда офисных помещений<br /> в Екатеринбурге от собственника</h1>
+        <p class="office__p">свободные офисы от 20кв/м на ваш выбор</p>
+        <button data-toggle="modal" data-target="#modal-7">подобрать офис</button>
+        <div class="scroll_button">
+            <span class="border_scroll"></span>
         </div>
     </section>
-
-    <section class="other_office">
-        <p class="warm__border"></p>
-        <div class="container ">        
-            <span class="warm__span text-center col-sm-offset-2 clearfix">перейти в другой раздел</span>
-            <div class="">
-                <div class="other_block other_block_office col-lg-offset-2">
-                    <a href="{% url 'doker_page' %}">
-                            <img src="{% static 'img/office.jpg' %}" alt="">
-                            <h3>торговые <br />помещения</h3>
-                    </a>
+</div>
+<section class="office_content">
+    <div class="container">
+        <div class="row">
+            <h2 class="office__h2 text-center">Что Вы получаете, сняв офис у нас</h2>
+            <div class="building text-center">
+                <img src="{% static 'img/office/building.png' %}" alt="" class="building__img">
+                <img src="{% static 'img/office/cloud_left.png' %}" alt="" class="cloud_left img_absolute">
+                <img src="{% static 'img/office/cloud_right.png' %}" alt="" class="cloud_right img_absolute">
+                <img src="{% static 'img/office/tree_left.png' %}" alt="" class="tree_left img_absolute">
+                <img src="{% static 'img/office/tree_right.png' %}" alt="" class="tree_right img_absolute">
+                <div class="utp block_kamera">
+                    <img src="{% static 'img/office/kamera.png' %}" alt="" class="utp__img pull-right">
+                    <p class="utp__p text-right">Круглосуточное</br> видео наблюдение</p>
                 </div>
-                <div class="other_block other_block_office">
-                    <a href="{% url 'warehouse_page' %}">
-                        <img src="{% static 'img/torg_ploshadi.jpg' %}" alt="">
-                        <h3>складские<br />площади</h3>
-                    </a>
+                <div class="utp block_pojarnik">
+                    <img src="{% static 'img/office/pojarnik.png' %}" alt="" class="utp__img pull-right">
+                    <p class="utp__p text-right">Пожарная сигнализация</p>         
                 </div>
-            </div> 
-        </div>
-    </section>
-  
-
-    <div class="modal fade" id="modal-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button class="close" type="button" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Заголовок окна</h4>
+                <div class="utp block_yborka"> 
+                    <img src="{% static 'img/office/yborka.png' %}" alt="" class="utp__img pull-right">
+                    <p class="utp__p text-right">Клининговая служба</p>
                 </div>
-                <div class="modal-body clearfix">
-                    <div class="col-sm-6">
-                        <img src="{% static 'img/office1.jpeg' %}" alt="" class="item_img">
-                    </div>
-                    <div class="col-sm-6">
-                        <p>ldnfvlfdvdfnvdf fdnvdfinvndf df ndfjvjodfn
-                            jdfvdfjn dfjvofjd dfvndf jfdnvk dkjvdfkvndfv dfjvhdjnvdf vjdfknvdf vkjdfnvkdf vjjfnfvldnfv dfvjdfn</p>
-                    </div>
+                <div class="utp block_policeman">
+                    <img src="{% static 'img/office/policeman.png' %}" alt="" class="utp__img pull-right">
+                    <p class="utp__p text-right">Контрольно-пропускной режим</p>
                 </div>
-                <div class="modal-footer">
-                    <button class="btn btn-danger" type="button" data-dismiss="modal">Отмена</button>
+                <div class="utp block_telefon">
+                    <img src="{% static 'img/office/telefon.png' %}" alt="" class="utp__img pull-left">
+                    <p class="utp__p text-left">Цифровая телефонная связь</p>
+                </div>
+                <div class="utp block_imac">
+                    <img src="{% static 'img/office/imac.png' %}" alt="" class="utp__img pull-left">
+                    <p class="utp__p text-left">Выделенный канал интернет</p>
+                </div>
+                <div class="utp block_stolovaya">
+                    <img src="{% static 'img/office/stolovaya.png' %}" alt="" class="utp__img pull-left">
+                    <p class="utp__p text-left">Столовая для офисных работников</p>
                 </div>
             </div>
+            <div class="parking text-center">
+                <img src="{% static 'img/office/parking.png' %}" alt="" class="parking__img">
+                <img src="{% static 'img/office/stop.png' %}" alt="" class="stop__img img_absolute">
+                <div class="utp block_znak">
+                    <img src="{% static 'img/office/znak.png' %}" alt="" class="utp__img pull-right">
+                    <p class="utp__p text-right">Автопарковка для сотрудников</p>
+                </div>
+                <div class="utp block_avtobus">
+                    <img src="{% static 'img/office/avtobus.png' %}" alt="" class="utp__img pull-left">
+                    <p class="utp__p text-left">Остановка общественного транспорта</p>
+                </div>
+            </div>
+            
         </div>
     </div>
+</section>
 
-
+{% include 'trust_us.html' %}
 {% include 'contacts.html' %}
+<section class="other_office row">
+    <div class="other_block bg_other_w col-md-6">
+        <a href="{% url 'warehouse_page' %}">
+            <img src="{% static 'img/sklad_img_other.jpg' %}" alt="" class="img_other">
+            <h3 class="other_h3 text-center">складские помещения</h3>
+        </a>
+    </div>
+    <div class="other_block bg_other_d col-md-6">
+        <a href="{% url 'doker_page' %}">
+            <img src="{% static 'img/doker_img_other.jpg' %}" alt="" class="img_other">
+            <h3 class="other_h3 text-center">торговые площади</h3>
+        </a>
+    </div> 
+</section>
+  
+{% include 'map_oss.html' %}
+    
+{% include 'office_page/choose_office.html' %}
     
 {% endblock %}  

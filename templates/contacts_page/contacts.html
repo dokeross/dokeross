@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="section_contacts">
+    <div class="container">    
+        <div class="block_contacts clearfix">
+            <div class="col-sm-4 pull-left">
+                <h2>ГК "Оборонснабсбыт" Адрес:</h2>
+                <p>620025, Россия,г. Екатеринбург</br> ул. Бахчиванджи, 2</p>
+                <button class="contacts_button" data-toggle="modal" data-target="#modal-map">посмотреть на карте</button>
+                <h2>Отдел аренды</h2>
+                <p>+7 (343) 264-08-58
+                email: safrygina@oboronka.com
+                </p>
+                <h2>Отдел маркетинга</h2>
+                <p>+7 (343) 214-81-29</br>
+                email: marketing@oboronka.com
+                </p>
+            </div>
+            <div class="col-sm-6 pull-right">
+                <img src="{% static 'img/logo_level_0.gif' %}" alt="">
+                <div class="col-sm-12 contacts__form">
+                    <h3>Нам важно Ваше мнение</h3>
+                <form role="form">
+                    <input type="text" placeholder="представьтесь, пожалуйста" class="">
+                    <input type="text" placeholder="на какой email Вам ответить" class="">
+                    <input type="text" placeholder="что бы Вы хотели нам сказать" class="input_height_contacts">
+                    <button class="contacts_button_form col-sm-12">отправить</button>
+                </form>
+                </div>   
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'modal_map.html' %}
+{% endblock %}  
+

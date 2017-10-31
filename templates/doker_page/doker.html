@@ -5,47 +5,70 @@
 <div class="doker_header text-center">
     <h1 class="doker__h1">аренда торговых помещений <br />от собственника</h1>
     <p class="doker_p">в крупнейшем на урале торговом комплексе</p>
+    <div class="scroll_button">
+        <span class="border_scroll"></span>
+    </div>
 </div>
-<section class="presentation">
+<!-- <section class="presentation">
     <div class="container">
         <div class="row text-center col-sm-offset-1 col-lg-offset-0">
-            <div class="col-sm-5 col-lg-2 col-lg-offset-1 presentation__item active_presentation__item">
-                <p><span class="size_numbers">2</span> млн. <span class="item_bold">посетителей</span> ежегодно посещают торговый комплекс «ДОКЕР»</p>
-                <img src="{% static 'img/mouse.png' %}" alt="" class="presentation__img">
+            <div class="col-sm-5 col-lg-2 presentation__item active_presentation__item">
+                <img src="{% static 'img/family.png' %}" alt="">
+                <p>2 миллиона посетителей в год</p>
             </div>
             <div class="col-sm-5 col-lg-2 presentation__item">
                 <p><span class="size_numbers">120</span> тыс. <span class=m2>M<sup>2</sup></span> <span class="item_bold">площадь</span><br /> что делает «ДОКЕР» самым крупным ТК на Урале</p>
-                <img src="{% static 'img/mouse.png' %}" alt="" class="presentation__img">
             </div>
             <div class="col-sm-5 col-lg-2 presentation__item">
                 <p>более <span class="size_numbers">300</span> <span class="item_bold">магазинов</span> Все резиденты ТК «ДОКЕР» "магазины-специалисты"</p>
-                <img src="{% static 'img/mouse.png' %}" alt="" class="presentation__img">
             </div>
             <div class="col-sm-5 col-lg-2 presentation__item">
                 <p><span class="size_numbers">20</span> лет <span class="item_bold">опыта</span> успешного управления коммерческой недвижимостью</p>
-                <img src="{% static 'img/mouse.png' %}" alt="" class="presentation__img">
             </div>
+        </div>
+    </div>
+</section> -->
+<section class="presentation">
+    <div class="container">
+        <div class="col-md-3 presentation__item active_presentation__item">
+            <img src="{% static 'img/family.png' %}" alt="">
+            <p>2 миллиона</br> посетителей в год</p>
+        </div>
+        <div class="col-md-3 presentation__item">
+            <img src="{% static 'img/karta.png' %}" alt="">
+            <p>площадь ТК ДОКЕР</br> 120000 м2</p>
+        </div>
+        <div class="col-md-3 presentation__item">
+            <img src="{% static 'img/magazin.png' %}" alt="">
+            <p>Более 300</br> магазинов</p>
+        </div>
+        <div class="col-md-3 presentation__item">
+            <img src="{% static 'img/kalendar.png' %}" alt="">
+            <p>20 лет</br> успешного опыта</p>
         </div>
     </div>
 </section>
 <section class="category">
     <div class="container">
         <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-                <p class="types__p">Торговый комплекс «ДОКЕР» работает в формате ритейд-парка и является самым крупным
+            <div class="col-sm-12">
+                <p class="types__p">Торговый комплекс «ДОКЕР» работает в формате ритейл-парка и является самым крупным
                         по занимаемой территории в УРФО - общая площадь составляет 15га.
                 </p>
                 <div class="type_categories clearfix">
-                    <h2>Торговые помещения категории "A"</h2>
+                    <h2 class="type_categories__h2">Торговые помещения категории "A"</h2>
                     <p>от 15 до 2000м2</p>
                     <i class="fa fa-chevron-down fa-lg categories_fa" aria-hidden="true"></i>
                     <div class="categories_hidden">
                         <div class="hidden_left">
-                            <img src="{% static 'img/img_hidden.jpg' %}" alt="" class="img_hidden">
-                            <button class="button_hidden" data-toggle="modal" data-target="#modal-2">Подробнее</button>
+                            <img src="{% static 'img/torg_ploshadi3.jpg' %}" alt="" class="img_hidden">
+                            <button class="button_hidden" data-toggle="modal" data-target="#modal-kat-a">Подробнее</button>
                         </div>
+                        <p>
+                            <b>Характеристика объектов</b>
+                        </p>
                         <ul class="hidden_left">
-                            <li>Этажность -2</li>
+                            <li>Этажность - 2</li>
                             <li>Теплоснабжение</li>
                             <li>Вентиляция</li>
                             <li>Водопровод</li>
@@ -61,156 +84,111 @@
                     </div>
                 </div>
                 <div class="type_categories clearfix">
-                    <h2>Торговые помещения категории "A"</h2>
-                    <p>от 15 до 2000м2</p>
+                    <h2 class="type_categories__h2">Торговые помещения категории "В"</h2>
+                    <p>от 25 до 120м2</p>
                     <i class="fa fa-chevron-down fa-lg categories_fa" aria-hidden="true"></i>
                     <div class="categories_hidden">
                         <div class="hidden_left">
-                            <img src="{% static 'img/img_hidden.jpg' %}" alt="" class="img_hidden">
-                            <button class="button_hidden" data-toggle="modal" data-target="#modal-2">Подробнее</button>
+                            <img src="{% static 'img/kat_b_8.jpg' %}" alt="" class="img_hidden">
+                            <button class="button_hidden" data-toggle="modal" data-target="#modal-kat-b">Подробнее</button>
                         </div>
+                        <p>
+                            <b>Характеристика объектов</b>
+                        </p>
                         <ul class="hidden_left">
-                            <li>Этажность -2</li>
+                            <li>Этажность - 1</li>
                             <li>Теплоснабжение</li>
-                            <li>Вентиляция</li>
-                            <li>Водопровод</li>
-                            <li>Канализация</li>
                             <li>Видеонаблюдение</li>
                             <li>Пожарная сигнализация</li>
                             <li>Цифровая телефонная связь</li>
                             <li>Выделенный канал интернет</li>
                             <li>Автопарковка</li>
-                            <li>Зона погрузки</li>
-                            <li>Возможна аренда части помещения</li>
                         </ul>
                     </div>
                 </div>
                 <div class="type_categories clearfix">
-                    <h2>Торговые помещения категории "A"</h2>
-                    <p>от 15 до 2000м2</p>
+                    <h2 class="type_categories__h2">Торговые помещения категории "С"</h2>
+                    <p>от 18м2 (одноэтажные павильоны с отдельным входом)</p>
                     <i class="fa fa-chevron-down fa-lg categories_fa" aria-hidden="true"></i>
                     <div class="categories_hidden">
                         <div class="hidden_left">
-                            <img src="{% static 'img/img_hidden.jpg' %}" alt="" class="img_hidden">
-                            <button class="button_hidden" data-toggle="modal" data-target="#modal-2">Подробнее</button>
+                            <img src="{% static 'img/kat_c/kat_c_8.jpg' %}" alt="" class="img_hidden">
+                            <button class="button_hidden" data-toggle="modal" data-target="#modal-kat-c">Подробнее</button>
                         </div>
+                        <p>
+                            <b>Характеристика объектов</b>
+                        </p>
                         <ul class="hidden_left">
-                            <li>Этажность -2</li>
-                            <li>Теплоснабжение</li>
-                            <li>Вентиляция</li>
-                            <li>Водопровод</li>
-                            <li>Канализация</li>
-                            <li>Видеонаблюдение</li>
+                            <li>Этажность - 1</li>
+                            <li>Высота потолков - 6 м</li>
+                            <li>Электроснабжение</li>
+                            <li>Распашные ворота</li>
+                            <li>Возможность аренды земельного участка перед объектом</li>
                             <li>Пожарная сигнализация</li>
-                            <li>Цифровая телефонная связь</li>
-                            <li>Выделенный канал интернет</li>
                             <li>Автопарковка</li>
-                            <li>Зона погрузки</li>
-                            <li>Возможна аренда части помещения</li>
                         </ul>
                     </div>
                 </div>
                 <div class="type_categories clearfix">
-                    <h2>Торговые помещения категории "A"</h2>
-                    <p>от 15 до 2000м2</p>
+                    <h2 class="type_categories__h2">Торговые помещения категории "С"</h2>
+                    <p>от 300 до 500м2 (здания ангарного типа из легких металлоконструкций)</p>
                     <i class="fa fa-chevron-down fa-lg categories_fa" aria-hidden="true"></i>
                     <div class="categories_hidden">
                         <div class="hidden_left">
-                            <img src="{% static 'img/img_hidden.jpg' %}" alt="" class="img_hidden">
-                            <button class="button_hidden" data-toggle="modal" data-target="#modal-2">Подробнее</button>
+                            <img src="{% static 'img/kat_c_f/kat_c_f1.jpg' %}" alt="" class="img_hidden">
+                            <button class="button_hidden" data-toggle="modal" data-target="#modal-kat-c-f">Подробнее</button>
                         </div>
+                        <p>
+                            <b>Характеристика объектов</b>
+                        </p>
                         <ul class="hidden_left">
-                            <li>Этажность -2</li>
+                            <li>Этажность - 1</li>
                             <li>Теплоснабжение</li>
-                            <li>Вентиляция</li>
-                            <li>Водопровод</li>
-                            <li>Канализация</li>
-                            <li>Видеонаблюдение</li>
                             <li>Пожарная сигнализация</li>
                             <li>Цифровая телефонная связь</li>
                             <li>Выделенный канал интернет</li>
                             <li>Автопарковка</li>
-                            <li>Зона погрузки</li>
-                            <li>Возможна аренда части помещения</li>
                         </ul>
                     </div>
                 </div>
-            </div>                    
+            </div>
         </div>
     </div>
 </section>
-<!-- <section class="about">
-    <h3 class="h3_about text-center">Территория торгового комплекса «ДОКЕР»</h3>
-    <div class="video">
-        <video src="{% static 'img/video_doker.mp4' %}" controls class="video_doker"></video>
-    </div>
-</section> -->
 <section class="about">
-            <h3 class="h3_about text-center">Территория торгового комплекса «ДОКЕР»</h3>
-            <div class="video">
-                <video src="{% static 'img/video_doker.mp4' %}" controls class="video_doker"></video>
-            </div> 
-    <!-- <div class="container">
-        <div class="row">
-            <h3 class="h3_about text-center">Территория торгового комплекса «ДОКЕР»</h3>
-            <div class="video col-sm-6">
-                <video src="{% static 'img/video_doker.mp4' %}" controls class="video_doker"></video>
-            </div> 
-            <div class="doker_map col-sm-6 hidden-xs hidden-sm">
-                <img src="{% static 'img/doker_map.png' %}" alt="" class="img_map">
-                <p>ДОКЕР состоит из линейно выстроенных отдельно стоящих двухэтажных магазинов и галереи одноэтажных павильонов.
-                        Суммарная торговая площадь «ДОКЕРА» – около 50 000 кв. м.
-                        Это самый большой специализированный торговый комплекс в Уральском регионе с опытом работы более 20 лет.</p>
-                <a href="http://www.doker.ru/"><button class="button_map">перейти на сайт «ДОКЕР»</button></a>
-            </div> 
-        </div>
-    </div> -->
-</section>
-<section class="other_doker">
-    <p class="warm__border"></p>
-    <div class="container ">        
-        <span class="warm__span text-center col-sm-offset-2 clearfix">перейти в другой раздел</span>
-        <div class="">
-            <div class="other_block other_block_doker col-lg-offset-2">
-                <a href="{% url 'office_page' %}">
-                        <img src="{% static 'img/office.jpg' %}" alt="">
-                        <h3>офисные <br />помещения</h3>
-                </a>
-            </div>
-            <div class="other_block other_block_doker">
-                <a href="{% url 'warehouse_page' %}">
-                    <img src="{% static 'img/torg_ploshadi.jpg' %}" alt="">
-                    <h3>складские<br />площади</h3>
-                </a>
-            </div>
-        </div> 
+    <div class="video">
+        <video src="{% static 'img/video_doker2.mp4' %}" autoplay loop class="video_doker"></video>
     </div>
+    <div class="container-fluid">
+        <h3 class="h3_about text-center">Территория торгового</br> комплекса «ДОКЕР»</h3>
+</div>
 </section>
-
-<div class="modal fade" id="modal-2">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button class="close" type="button" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Заголовок окна</h4>
-                </div>
-                <div class="modal-body clearfix">
-                    <div class="col-sm-6">
-                        <img src="{% static 'img/img_hidden.jpg' %}" alt="" class="item_img">
-                    </div>
-                    <div class="col-sm-6">
-                        <p>22ldnfvlfdvdfnvdf fdnvdfinvndf df ndfjvjodfn
-                            jdfvdfjn dfjvofjd dfvndf jfdnvk dkjvdfkvndfv dfjvhdjnvdf vjdfknvdf vkjdfnvkdf vjjfnfvldnfv dfvjdfn</p>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-danger" type="button" data-dismiss="modal">Отмена</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+{% include 'reviews.html' %}
+{% include 'trust_us.html' %}
 {% include 'contacts.html' %}
+<section class="other_doker row">
+    <div class="other_block bg_other_w col-md-6">
+        <a href="{% url 'warehouse_page' %}">
+            <img src="{% static 'img/sklad_img_other.jpg' %}" alt="" class="img_other">
+            <h3 class="other_h3 text-center">складские помещения</h3>
+        </a>
+    </div>
+    <div class="other_block bg_other_o col-md-6">
+        <a href="{% url 'office_page' %}">
+            <img src="{% static 'img/office_img_other.png' %}" alt="" class="img_other">
+            <h3 class="other_h3 text-center">офисные помещения</h3>
+        </a>
+    </div>   
+</section>
+{% include 'map_oss.html' %}
 
 
-{% endblock %}  
+{% include 'doker_page/photo_kat_a.html' %}
+{% include 'doker_page/photo_kat_b.html' %}
+{% include 'doker_page/photo_kat_c.html' %}
+{% include 'doker_page/photo_kat_c_f.html' %}
+
+
+
+
+{% endblock %}

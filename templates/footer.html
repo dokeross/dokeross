@@ -12,11 +12,11 @@
             Тел. +7(343) 343-44-44<br />
             Email: oboronka@mail.com
         </p>
-        <button class="footer_button">посмотреть на карте</button>
+        <button class="footer_button" data-toggle="modal" data-target="#modal-map">посмотреть на карте</button>
         </div>
         <div class="col-sm-2 pull-right text-right contact phone_float">
             <p class="contact__p"><b>+7(343) 343-33-33</b></p>
-            <span class="footer__span hidden-xs">многоканальный телефон</span>
+            <span class="footer__span hidden-xs">Вы также можете:</span>
             <button class="footer_button" data-toggle="modal" data-target="#modal-4">написать нам</button>
             <button class="footer_button" data-toggle="modal" data-target="#modal-3">заказать звонок</button>
         </div>
@@ -26,3 +26,4 @@
 
 {% include 'callback.html' %}
 {% include 'form_footer.html' %}
+{% include 'modal_map.html' %}

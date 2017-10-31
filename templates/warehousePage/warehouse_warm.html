@@ -17,7 +17,7 @@
             <img src="{% static 'img/main_theme.png' %}" alt="" class="galereya__img">
             <div class="carousel-caption">
             <h3>Теплый, многофункциональный склад-ангар</h3>
-            <p>Предназначен для хранения товаров различной категории</p>
+            <p>СКЛАД ПРЯМОУГОЛЬНОЙ ФОРМЫ. БОЛЬШАЯ ПЛОЩАДКА ПЕРЕД СКЛАДОМ ПОЗВОЛЯЕТ МАНЕВРИРОВАТЬ БОЛЬШЕГРУЗНОМУ ТРАНСПОРТУ</p>
             </div>
         </div>
         <div class="item">
@@ -47,105 +47,11 @@
         <a href="{% url 'warehouse_open' %}"><div class="col-sm-3 item-choice">Открытые площади</div></a>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <p class="description__warm">Где slidesToShow — это количество слайдов выводящихся на экране,
-                    a slidesToScroll — количество слайдов, которые перелистываются за один раз.
-                    Значение infinite определяет будет ли зацикливаться слайдер. Т.е. если вам нужно чтобы ваш слайдер прекратил листаться
-                    после последнего слайда нужно присвоить данному значению false.
-                    Для такой разновидности слайдеров есть возможность настроить вывод определенного количества слайдов
-                    в зависимости от значения ширины экрана. Реализовать это можно так
-                </p>
-            </div>    
-            <div class="col-lg-8 col-lg-offset-2">
-            <div class="hf">
-                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flipper">
-                        <div class="front">
-                            <p class="inline-warm">от 50 до 4000м2</p>
-                        </div>
-                        <div class="back">
-                            <p class="inline-warm">Площадь<br />одо 4000м2</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flipper">
-                        <div class="front">
-                            <p class="inline-warm">Аренда необходимых вам метров</p>
-                        </div>
-                        <div class="back">
-                            <p class="inline-warm">Площадь<br />одо 4000м2</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flipper">
-                        <div class="front">
-                            <p class="inline-warm">Услуги погрузки, разгрузки</p>
-                        </div>
-                        <div class="back">
-                            <p class="inline-warm">Площадь<br />одо 4000м2</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                <div class="flipper">
-                    <div class="front">
-                        <p class="inline-warm">Возможность снять офис</p>
-                    </div>
-                    <div class="back">
-                        <p class="inline-warm">Площадь<br />одо 4000м2</p>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flipper">
-                        <div class="front">
-                            <p class="inline-warm">Антипылевые полы</p>
-                        </div>
-                        <div class="back">
-                            <p class="inline-warm">Площадь<br />одо 4000м2</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flipper">
-                        <div class="front">
-                            <p class="inline-warm">Наличие всего необходимого оборудования</p>
-                        </div>
-                        <div class="back">
-                            <p class="inline-warm">Площадь<br />одо 4000м2</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                <div class="flipper">
-                    <div class="front">
-                        <p class="inline-warm">Вывоз мусора, снега, утилизация отходов</p>
-                    </div>
-                    <div class="back">
-                        <p class="inline-warm">одо 4000м2</p>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                <div class="flipper">
-                    <div class="front">
-                        <p class="inline-warm">Наличие своей Ж/Д ветки</p>
-                    </div>
-                    <div class="back">
-                        <p class="inline-warm">Площадь<br />одо 4000м2</p>
-                    </div>
-                </div>
-            </div>
-            </div>         
-            </div>
-        </div>
-    </div>
-    <p class="warm__border"></p>
+    {% include 'warehousePage/flip.html' %}
+    {% include 'trust_us.html' %}
+    {% include 'contacts.html' %}
     {% include 'warehousePage/other_block.html' %}
+    {% include 'map_oss.html' %}
 </div>
 {% include 'contacts.html' %}
 

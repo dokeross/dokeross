@@ -1,18 +1,15 @@
 {% load static %}
-<div class="container">        
-        <span class="warm__span text-center col-sm-offset-2 clearfix">перейти в другой раздел</span>
-        <div class="other">
-            <div class="other_block other_block_warehouse col-lg-offset-2">
-                <a href="{% url 'office_page' %}">
-                    <img src="{% static 'img/office.jpg' %}" alt="">
-                    <h3>офисные <br />помещения</h3>
-                </a>
-            </div>
-            <div class="other_block other_block_warehouse">
-                <a href="{% url 'doker_page' %}">
-                    <img src="{% static 'img/torg_ploshadi.jpg' %}" alt="">
-                    <h3>торговые<br />площади</h3>
-                </a>     
-            </div>
-        </div> 
+<section class="other_warehouse row">
+    <div class="other_block bg_other_o col-md-6">
+        <a href="{% url 'office_page' %}">
+            <img src="{% static 'img/office_img_other.png' %}" alt="" class="img_other">
+            <h3 class="other_h3 text-center">офисные помещения</h3>
+        </a>
     </div>
+    <div class="other_block bg_other_d2 col-md-6">
+        <a href="{% url 'doker_page' %}">
+            <img src="{% static 'img/doker_img_other.jpg' %}" alt="" class="img_other">
+            <h3 class="other_h3 text-center">торговые площади</h3>
+        </a>
+    </div> 
+</section>

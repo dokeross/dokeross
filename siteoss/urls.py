@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^', include('office.urls')),
     url(r'^', include('doker.urls')),
     url(r'^', include('about.urls')),
+    url(r'^', include('contacts.urls')),
 ] \
               + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

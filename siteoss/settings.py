@@ -25,7 +25,8 @@ SECRET_KEY = '@q%^57xd^ii&llle3)bk@m#1l1#mpkgr44+-4e55_34e931*(2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dokeross.pythonanywhere.com']
+ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['dokeross.pythonanywhere.com']
 
 
 # Application definition
